@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+
+    <style>
+     body{
+        background-color: cornflowerblue;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+     a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+     }
+
+     a:visited {
+        color: rgb(21, 0, 139);
+     }
+
+     a:hover {
+        color: black;
+        text-decoration: underline;
+     }
+     
+     a:active {
+        color: chartreuse;
+     }
+
+     .special{
+        background-color: gray;
+        color: gold;
+     }
+    
+     .special::before {
+        content: '\2665';
+     }
+     .special::after {
+        content: '\2665';
+
+     }
+
+     /*
+     SELETORES PERSONALIZADOS
+     id= #
+     class= .
+     pseudo-class=:
+     pseudo-elementos=::
+     > =clildren(filho)
+     */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+      <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAN</a></li>
+      <li><a href="https://youtu.be/O9mcoh6yxKc?si=gOysFNZh-NBhx0-Z" target="_blank" class="special">ASRM relaxante</a></li>
+      <li><a href="https://www.google.com/search?q=tabela+brasileir%C3%A3o&oq=tabela+&gs_lcrp=EgZjaHJvbWUqCggEEAAYsQMYgAQyBggAEEUYOTIMCAEQIxgnGIAEGIoFMgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgoIBBAAGLEDGIAEMg0IBRAAGIMBGLEDGIAEMgcIBhAAGIAEMgoIBxAAGLEDGIAEMg0ICBAAGIMBGLEDGIAEMgcICRAAGIAE0gEINjA1N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">Tabela do brasileirão 2024</a></li>
+    </ul>
+</body>
+</html>
